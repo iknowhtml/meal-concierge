@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<!-- bootstrap css -->
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<!-- boostrap js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+	
+
+		<title> Meal Concierge </title>
+	</header>
+	
+	<body>
+		<nav class= "navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="./">Meal Concierge</a>
+				</div>
+				<ul class="nav navbar-nav pull-right">
+					<li>
+						<a class="btn btn-default" href="/" style="padding-top: 10px; padding-bottom: 10px; top: 4px">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<h2 class="text-center">My Meals</h2>
+			<!-- accordion menu -->
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#theVirginian">The Virginian</h4>
+					</div>
+					<div id="theVirginian" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<!-- nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#groupItems" aria-controls="groupItems" role="tab" data-toggle="tab">Group Items</a>
+								</li>
+								<li role="presentation">
+									<a href="#myItems" aria-controls="myItems" role="tab" data-toggle="tab">My Items</a>
+								</li>
+							</ul>
+							<!-- tab content -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="groupItems">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Cost</th>
+												<th class="text-center">Claimed?</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Stumble Down Mac n' Cheese</td>
+												<td>$10</td>
+												<td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+											</tr>
+											<tr>
+												<td>Crab Cake Sandwhich</td>
+												<td>$12</td>
+												<td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+											</tr>
+											<tr>
+												<td>BBQ Chicken</td>
+												<td>$11</td>
+												<td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+											</tr>
+											<tr>
+												<td>The Virginian T-Bone</td>
+												<td>$18</td>
+												<td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="myItems">
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Cost</th>
+												<th class="text-center">Claim</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Stumble Down Mac n' Cheese</td>
+												<td>$10</td>
+												<td class="text-center"><input type="checkbox" checked="checked"></td>
+											</tr>
+											<tr>
+												<td>Crab Cake Sandwhich</td>
+												<td>$12</td>
+												<td class="text-center"><input type="checkbox"></td>
+											</tr>
+											<tr>
+												<td>BBQ Chicken</td>
+												<td>$11</td>
+												<td class="text-center"><input type="checkbox"></td>
+											</tr>
+											<tr>
+												<td>The Virginian T-Bone</td>
+												<td>$18</td>
+												<td class="text-center"><input type="checkbox"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<table class="table">
+									<tr class="success">
+										<td class="text-center"><h5>Group Is All Set!</h5></td>
+									</tr>
+								</table>
+								
+								<div class="input-group">
+  									<span class="input-group-addon" id="shareUrl">Share Link</span>
+  									<input type="text" class="form-control" aria-describedby="shareUrl" value="https://mealconcierge.com/meal/1">
+  								</div><br>
+
+								<div class="text-center">
+									<a class="btn btn-default" href="/pay.html">Proceed to Payment</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 	
+		</div>
+	</body>
+</html>
+
